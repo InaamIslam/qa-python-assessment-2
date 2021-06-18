@@ -1,8 +1,8 @@
-def six(string):
-    if string[-2:] == "py":
-        return True
-    else:
-        return False
+def eight(string,  a):
+    new_string = string[1:-1]
+    final_string = new_string.replace("")
 
-testing = six("welovepyforreal")
+    return final_string
+
+testing = eight("Hello", 3)
 print(testing)
