@@ -53,7 +53,6 @@ def one(string):
 
 
 def two(number):
-    def two(number):
     if number > 1:
         for integer in range(2, number):
             if number % integer == 0:
@@ -80,7 +79,12 @@ def two(number):
 
 
 def three(a):
-    return 1
+    n1 = int( "%s" % a )
+    n2 = int( "%s%s" % (a,a) )
+    n3 = int( "%s%s%s" % (a,a,a) ) 
+    n4 = int( "%s%s%s%s" % (a,a,a,a))
+    total = (n1+n2+n3+n4)
+    return total
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 

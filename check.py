@@ -1,18 +1,11 @@
-def two(number):
-    if number > 1:
-        for integer in range(2, number):
-            if number % integer == 0:
-                return False
-            else:
-                return True 
-    
-    # if number / number == 1:
-    #     return True
-    # elif number in range(2, number) % number == 0:
-    #     return True
-    # else:
-    #     return False
+def three(a):
+    n1 = int( "%s" % a )
+    n2 = int( "%s%s" % (a,a) )
+    n3 = int( "%s%s%s" % (a,a,a) ) 
+    n4 = int( "%s%s%s%s" % (a,a,a,a))
+    total = (n1+n2+n3+n4)
+    return total
 
 
-testing = two(7)
+testing = three(9)
 print(testing)
