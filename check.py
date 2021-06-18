@@ -1,6 +1,8 @@
-def five():
-    import random
-    return random.sample([i for i in range(100,201) if i%2==0], 5)
-    
-testing = five()
+def six(string):
+    if string[-2:] == "py":
+        return True
+    else:
+        return False
+
+testing = six("welovepyforreal")
 print(testing)
